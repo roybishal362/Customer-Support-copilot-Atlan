@@ -81,7 +81,7 @@ cp .env.example .env
 
 4. **Run the application**
 ```bash
-streamlit run app.py
+streamlit run main.py
 ```
 
 5. **Access the application**
@@ -332,7 +332,7 @@ ping docs.atlan.com
 - **Memory Issues**: Clear browser cache and restart
 - **Network Timeouts**: Check firewall and proxy settings
 
-## 📞 Support & Contact
+##  Support & Contact
 
 ### Development Team
 - **Architecture**: AI Pipeline and RAG Implementation
