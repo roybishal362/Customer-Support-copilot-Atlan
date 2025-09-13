@@ -1,4 +1,4 @@
-# Customer Support Copilot 🤖
+# Customer Support Copilot ![Project Logo](atlan icon.png)
 
 An end-to-end AI-powered customer support system built with **Streamlit + LangChain + Groq LLM + FAISS** that automatically classifies support tickets and provides intelligent responses using RAG (Retrieval-Augmented Generation) from live Atlan documentation.
 
