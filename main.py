@@ -359,14 +359,14 @@ class SupportCopilot:
 def main():
     st.set_page_config(
         page_title="Customer Support Copilot",
-        page_icon="atlan icon.png",
+        page_icon="atlan_icon.png",
         layout="wide"
     )
     
     st.markdown(
         f"""
         <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-            <img src="data:image/png;base64,{get_base64_of_image(r'atlan icon.png')}" 
+            <img src="data:image/png;base64,{get_base64_of_image(r'atlan_icon.png')}" 
                  style="width: 40px; height: 40px; margin-right: 15px;">
             <h1 style="margin: 0; font-size: 3rem;">Customer Support Copilot</h1>
         </div>
