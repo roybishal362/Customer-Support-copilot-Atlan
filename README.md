@@ -342,7 +342,7 @@ ping docs.atlan.com
 - **Documentation**: Comprehensive User Guides
 
 ### Resources
-- **GitHub Repository**: [Link to repository]
+- **GitHub Repository**: https://github.com/roybishal362/Customer-Support-copilot-Atlan/tree/main
 - **Issue Tracker**: Report bugs and feature requests
 - **Documentation**: This README and inline code comments
 - **API References**: LangChain, Groq, and Streamlit docs
