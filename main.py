@@ -8,6 +8,7 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 import time
+import base64
 
 # LangChain imports
 from langchain_groq import ChatGroq
@@ -35,6 +36,11 @@ default_groq_key = os.getenv("GROQ_API_KEY", "")
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "customer-support-copilot"
 
+def get_base64_of_image(path):
+    """Convert image to base64 string"""
+    with open(path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+    
 class TicketClassifier:
     def __init__(self, groq_api_key: str):
         self.llm = ChatGroq(
@@ -353,13 +359,20 @@ class SupportCopilot:
 def main():
     st.set_page_config(
         page_title="Customer Support Copilot",
-        page_icon="🤖",
+        page_icon="atlan icon.png",
         layout="wide"
     )
     
-    st.title("🤖 Customer Support Copilot")
-    st.markdown("AI-powered customer support with automatic ticket classification and intelligent routing")
-    
+    st.markdown(
+        f"""
+        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <img src="data:image/png;base64,{get_base64_of_image(r'atlan icon.png')}" 
+                 style="width: 40px; height: 40px; margin-right: 15px;">
+            <h1 style="margin: 0; font-size: 3rem;">Customer Support Copilot</h1>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
     # Sidebar for configuration
     with st.sidebar:
         st.header("Configuration")
