@@ -5,11 +5,10 @@ import os
 from typing import List, Dict
 
 class Config:
-    # Groq LLM Configuration
-    GROQ_MODEL = "llama-3.3-70b-versatile"  # Available Groq model
+    GROQ_MODEL = "llama-3.3-70b-versatile"  
     GROQ_TEMPERATURE = 0.1
     
-    # Classification Categories
+    # Categories
     TOPIC_CATEGORIES = [
         "How-to", "Product", "Connector", "Lineage", 
         "API/SDK", "SSO", "Glossary", "Best practices", 
@@ -32,13 +31,11 @@ class Config:
         "https://developer.atlan.com/",
     ]
     
-    # Vector Store Configuration
     EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
     CHUNK_SIZE = 1000
     CHUNK_OVERLAP = 200
     RETRIEVAL_K = 3
     
-    # LangSmith Configuration
     LANGSMITH_PROJECT = "customer-support-copilot"
     
     @classmethod
