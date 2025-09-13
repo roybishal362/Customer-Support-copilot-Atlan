@@ -14,3 +14,4 @@ python-dotenv
 tiktoken
 lxml
 html5lib
+langchain-huggingface
