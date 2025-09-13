@@ -1,0 +1,11 @@
+subject,content
+How to set up data lineage tracking?,Hi I need help understanding how to set up data lineage tracking in Atlan. Can you provide step-by-step instructions?
+SSO integration not working,Our SSO integration with Azure AD is failing. Users are getting authentication errors and cannot log in. This is urgent!
+API rate limits exceeded,We are hitting API rate limits when trying to sync our metadata. What are the current limits and how can we increase them?
+Data connector configuration,I am trying to configure the Snowflake connector but getting connection timeout errors. The credentials are correct.
+Best practices for metadata management,What are the recommended best practices for organizing and managing metadata in Atlan for a large enterprise?
+Glossary terms not syncing,The business glossary terms I created yesterday are not appearing in the search results. Is there a sync delay?
+Sensitive data classification issue,Some PII data is not being automatically classified as sensitive. How can I improve the detection accuracy?
+Product feature request,Would it be possible to add custom metadata fields for our specific industry requirements? This would be very helpful.
+How to use the REST API,I need documentation on how to use the Atlan REST API to programmatically update asset metadata.
+Lineage visualization problems,The data lineage visualization is not showing all the upstream dependencies. Some connections seem to be missing.

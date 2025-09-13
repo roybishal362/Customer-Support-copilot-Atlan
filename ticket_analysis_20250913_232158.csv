@@ -1,0 +1,31 @@
+Ticket,Topic,Sentiment,Priority
+"{'id': 'TICKET-245', 'subject': 'Connecting Snowflake to Atlan - required permissions?', 'body': ""Hi...",Connector,Frustrated,P1
+"{'id': 'TICKET-246', 'subject': 'Which connectors automatically capture lineage?', 'body': ""Hello, I...",Lineage,Curious,P1
+"{'id': 'TICKET-247', 'subject': 'Deployment of Atlan agent for private data lake', 'body': ""Our prim...",Connector,Neutral,P0
+"{'id': 'TICKET-248', 'subject': 'How to surface sample rows and schema changes?', 'body': ""Hi, we've...",How-to,Curious,P1
+"{'id': 'TICKET-249', 'subject': 'Exporting lineage view for a specific table', 'body': ""For our quar...",Lineage,Frustrated,P1
+"{'id': 'TICKET-250', 'subject': 'Importing lineage from Airflow jobs', 'body': ""We run hundreds of E...",Connector,Curious,P1
+"{'id': 'TICKET-251', 'subject': 'Using the Visual Query Builder', 'body': ""I'm a business analyst an...",How-to,Curious,P2
+"{'id': 'TICKET-252', 'subject': 'Programmatic extraction of lineage', 'body': 'Our internal data sci...",API/SDK,Curious,P1
+"{'id': 'TICKET-253', 'subject': 'Upstream lineage to Snowflake view not working', 'body': ""This is i...",Lineage,Frustrated,P0
+"{'id': 'TICKET-254', 'subject': 'How to create a business glossary and link terms in bulk?', 'body':...",Glossary,Frustrated,P1
+"{'id': 'TICKET-255', 'subject': 'Creating a custom role for data stewards', 'body': ""I'm trying to s...",How-to,Curious,P1
+"{'id': 'TICKET-256', 'subject': 'Mapping Active Directory groups to Atlan teams', 'body': ""Our compa...",Connector,Curious,P1
+"{'id': 'TICKET-257', 'subject': 'RBAC for assets vs. glossaries', 'body': ""I need clarification on h...",Glossary,Curious,P1
+"{'id': 'TICKET-258', 'subject': 'Process for onboarding asset owners', 'body': ""We've started identi...",How-to,Curious,P1
+"{'id': 'TICKET-259', 'subject': 'How does Atlan surface sensitive fields like PII?', 'body': 'Our se...",Sensitive data,Curious,P1
+"{'id': 'TICKET-260', 'subject': 'Authentication methods for APIs and SDKs', 'body': 'We are planning...",API/SDK,Curious,P1
+"{'id': 'TICKET-261', 'subject': 'Enabling and testing SAML SSO', 'body': 'We are ready to enable SAM...",SSO,Curious,P1
+"{'id': 'TICKET-262', 'subject': 'SSO login not assigning user to correct group', 'body': ""I've just ...",SSO,Curious,P1
+"{'id': 'TICKET-263', 'subject': 'Integration with existing DLP or secrets manager', 'body': 'Does At...",Connector,Curious,P1
+"{'id': 'TICKET-264', 'subject': 'Accessing audit logs for compliance reviews', 'body': 'Our complian...",How-to,Curious,P1
+"{'id': 'TICKET-265', 'subject': 'How to programmatically create an asset using the REST API?', 'body...",API/SDK,Curious,P1
+"{'id': 'TICKET-266', 'subject': 'SDK availability and Python example', 'body': ""I'm a data engineer ...",API/SDK,Curious,P2
+"{'id': 'TICKET-267', 'subject': 'How do webhooks work in Atlan?', 'body': ""I'm exploring using webho...",API/SDK,Curious,P2
+"{'id': 'TICKET-268', 'subject': 'Triggering an AWS Lambda from Atlan events', 'body': ""We have a wor...",Connector,Curious,P1
+"{'id': 'TICKET-269', 'subject': 'When to use Atlan automations vs. external services?', 'body': ""I s...",Best practices,Curious,P2
+"{'id': 'TICKET-270', 'subject': 'Connector failed to crawl - where to check logs?', 'body': 'URGENT:...",Connector,Frustrated,P0
+"{'id': 'TICKET-271', 'subject': 'Asset extracted but not published to Atlan', 'body': ""This is very ...",Product,Frustrated,P1
+"{'id': 'TICKET-272', 'subject': 'How to measure adoption and generate reports?', 'body': 'My manager...",How-to,Curious,P1
+"{'id': 'TICKET-273', 'subject': 'Best practices for catalog hygiene', 'body': ""We've been using Atla...",Best practices,Curious,P2
+"{'id': 'TICKET-274', 'subject': 'How to scale Atlan across multiple business units?', 'body': ""We ar...",Best practices,Curious,P1
