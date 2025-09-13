@@ -32,7 +32,7 @@ load_dotenv()
 
 default_groq_key = os.getenv("GROQ_API_KEY", "")
 
-# Initialize LangSmith
+# Initializing LangSmith
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "customer-support-copilot"
 
@@ -45,7 +45,7 @@ class TicketClassifier:
     def __init__(self, groq_api_key: str):
         self.llm = ChatGroq(
             groq_api_key=groq_api_key,
-            model_name="llama-3.3-70b-versatile",  # Using available Groq model
+            model_name="llama-3.3-70b-versatile", 
             temperature=0.1
         )
         
@@ -84,7 +84,7 @@ class TicketClassifier:
 
 
 class AtlanDocLoader:
-    """Custom loader for Atlan documentation"""
+    """For loading Atlan documentation"""
     
     def __init__(self):
         self.session = requests.Session()
@@ -93,7 +93,7 @@ class AtlanDocLoader:
         })
     
     def load_from_url(self, url: str, max_pages: int = 20) -> List[Document]:
-        """Load content from Atlan documentation URL"""
+        """Loading content from Atlan documentation URL"""
         documents = []
         visited_urls = set()
         urls_to_visit = [url]
@@ -115,7 +115,7 @@ class AtlanDocLoader:
                 # Extract main content
                 content = self._extract_content(soup)
                 
-                if content and len(content.strip()) > 100:  # Only add substantial content
+                if content and len(content.strip()) > 100:  # Only add relevant and important content
                     documents.append(Document(
                         page_content=content,
                         metadata={
@@ -130,7 +130,7 @@ class AtlanDocLoader:
                                     if link not in visited_urls and len(visited_urls) < max_pages])
                 
                 visited_urls.add(current_url)
-                time.sleep(0.5)  # Be respectful with requests
+                time.sleep(0.5)  
                 
             except Exception as e:
                 st.warning(f"Failed to load {current_url}: {str(e)}")
@@ -187,7 +187,7 @@ class AtlanDocLoader:
         return "Atlan Documentation"
     
     def _extract_internal_links(self, soup: BeautifulSoup, base_url: str) -> List[str]:
-        """Extract internal links from the same domain"""
+        """Extracting internal and hidden links from the same domain"""
         links = []
         base_domain = self._get_domain(base_url)
         
@@ -206,7 +206,7 @@ class AtlanDocLoader:
             if self._get_domain(full_url) == base_domain:
                 links.append(full_url)
         
-        return list(set(links))  # Remove duplicates
+        return list(set(links))  # Removing duplicates
     
     def _get_domain(self, url: str) -> str:
         """Extract domain from URL"""
@@ -252,7 +252,6 @@ class KnowledgeBase:
                     "https://developer.atlan.com/",
                 ]
                 
-                # Create sample documents (in production, you'd load from actual URLs)
                 all_documents = []
 
                 for url in urls:
@@ -373,7 +372,7 @@ def main():
         """, 
         unsafe_allow_html=True
     )
-    # Sidebar for configuration
+    #For configuration
     with st.sidebar:
         st.header("Configuration")
         groq_api_key = st.text_input(
